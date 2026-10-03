@@ -8,6 +8,9 @@
      name: guestbook-ui
    spec:
      replicas: 1
+
+
+  
      revisionHistoryLimit: 3
      selector:
        matchLabels:
