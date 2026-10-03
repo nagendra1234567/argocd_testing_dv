@@ -11,4 +11,10 @@ spec:
     path: Gusetbook_demo_UI
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd
+    namespace: argocd-testing-dev
+  syncPolicy:
+    automated: 
+      prune: true
+      selfHeal: true
+  synncOptions:
+    - CreateNamespace=true
